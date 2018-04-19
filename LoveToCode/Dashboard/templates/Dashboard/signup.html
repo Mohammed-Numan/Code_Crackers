@@ -11,11 +11,11 @@
             if (document.getElementById('password').value ==
                 document.getElementById('confirm_password').value) {
                 document.getElementById('message').style.color = 'green';
-                // document.getElementById('message').innerHTML = 'PASSWORDS MATCH';
+                document.getElementById('message').innerHTML = 'PASSWORDS MATCH';
                 document.getElementById('sign_up').disabled = false;
             } else {
                 document.getElementById('message').style.color = 'red';
-                // document.getElementById('message').innerHTML = 'PASSWORDS DONOT MATCH';
+                document.getElementById('message').innerHTML = 'PASSWORDS DONOT MATCH';
                 document.getElementById('sign_up').disabled = true;
             }
         }
@@ -60,23 +60,23 @@
 
                                 <p class="content-item">
                                     <label>Phone Number
-                                        <input type="text" name="phone_number" required>
+                                        <input type="text" minlength="10" maxlength="12" name="phone_number" required>
                                     </label>
                                 </p>
 
                                 <p class="content-item">
 
                                     <label>password
-                                        <input type="password" name="password" required="required" id="password" onkeyup='check();' />
+                                        <input type="password" minlength="6" name="password" required="required" id="password" onkeyup='check();' />
                                     </label>
                                 </p>
                                 <p class="content-item">
 
                                     <label>Repeat Password
-                                        <input type="password" name="repeat_password" required="required" id="confirm_password" onkeyup='check();' />
+                                        <input type="password" minlength="6" name="repeat_password" required="required" id="confirm_password" onkeyup='check();' />
                                     </label>
                                 </p>
-                                <!-- <span id="message"></span> -->
+                                <span id="message"></span>
                                 <button type="submit" class="signup" style="cursor:pointer">Signup </button>
                                 <!-- <a href="#" class="login">login</a> -->
                             </form>
