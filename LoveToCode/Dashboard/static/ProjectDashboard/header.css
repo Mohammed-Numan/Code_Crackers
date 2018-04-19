@@ -1,0 +1,41 @@
+ul.nav{
+    list-style-type : none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color : black;
+  }
+  
+  ul.nav li{
+    float : left;
+  }
+  
+  ul.nav li a{
+    text-decoration : none;
+    display : block;
+    /*padding : 10px 90px;*/
+    padding : 8px 103px;
+    color : white;
+    border-right : 1px solid white;
+    text-align : center;
+  }
+  
+  ul.nav li a:hover{
+    background-color : white;
+    color : red;
+  }
+  
+  @media screen and (max-width : 520px){
+    ul.nav li a{
+      border-right : none;
+    }
+    ul.nav li{
+      float : none;
+    }
+  }
+  
+  @media screen and (max-width : 1300px){
+    ul.nav li a{
+      padding : 10px 
+    }
+  }

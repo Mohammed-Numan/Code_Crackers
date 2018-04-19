@@ -1,0 +1,93 @@
+<!DOCTYPE HTML> {% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'ProjectDashboard/signup.css' %}">
+</head>
+
+<body style="background-color:#2e3646">
+    <script>
+        var check = function () {
+            if (document.getElementById('password').value ==
+                document.getElementById('confirm_password').value) {
+                document.getElementById('message').style.color = 'green';
+                // document.getElementById('message').innerHTML = 'PASSWORDS MATCH';
+                document.getElementById('sign_up').disabled = false;
+            } else {
+                document.getElementById('message').style.color = 'red';
+                // document.getElementById('message').innerHTML = 'PASSWORDS DONOT MATCH';
+                document.getElementById('sign_up').disabled = true;
+            }
+        }
+    </script>
+    <div class="content-wrapper">
+        <div class="content">
+            <div class="signup-wrapper shadow-box">
+                <div class="company-details ">
+
+                    <div class="shadow"></div>
+                    <div class="wrapper-1">
+                        <div class="logo">
+                            <div class="icon-food">
+
+                            </div>
+                        </div>
+                        <h1 class="title">Sign Up.</h1>
+                        <div class="slogan">Get Started.</div>
+                        <br/>
+                        <p style="padding-left:40px;color:white">Already Have an Account?
+                            <a href="{% url 'Dashboard:login' %}" style="color:red">Click here</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="signup-form ">
+                    <div class="wrapper-2">
+                        <div class="form-title">Sign up today!</div>
+                        <div class="form">
+                            <form method=POST>{% csrf_token %}
+                                <p class="content-item">
+                                    <label>Full Name
+                                        <input type="text" name="user_name" required>
+                                    </label>
+                                </p>
+
+                                <p class="content-item">
+                                    <label>Email Address
+                                        <input type="text" name="email" required>
+                                    </label>
+                                </p>
+
+                                <p class="content-item">
+                                    <label>Phone Number
+                                        <input type="text" name="phone_number" required>
+                                    </label>
+                                </p>
+
+                                <p class="content-item">
+
+                                    <label>password
+                                        <input type="password" name="password" required="required" id="password" onkeyup='check();' />
+                                    </label>
+                                </p>
+                                <p class="content-item">
+
+                                    <label>Repeat Password
+                                        <input type="password" name="repeat_password" required="required" id="confirm_password" onkeyup='check();' />
+                                    </label>
+                                </p>
+                                <!-- <span id="message"></span> -->
+                                <button type="submit" class="signup" style="cursor:pointer">Signup </button>
+                                <!-- <a href="#" class="login">login</a> -->
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
