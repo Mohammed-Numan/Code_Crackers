@@ -1,4 +1,6 @@
-import os,re
+import os,re,logging
+logging.basicConfig(filename='first.log',level=logging.DEBUG, format=' %(asctime)s -%(levelname)s- %(message)s')
+# logging.disable(logging.CRITICAL)# -> This line stops logging.DEBUG to display....!If you want logging.dubug to display the comment this line...!
 
 def save_in_file(filename,*details):
     """
@@ -77,12 +79,18 @@ def get_comments(filename):
     #Regular expression to split each comment '|[1-9]+'->is used as delimiter between record [1-9]->Number of the comment.
     pattern = re.compile(r'\|\d+')
     contents = pattern.split(open(os.getcwd()+filename).read())
+    logging.debug(contents)
     return contents
 
 def get_question(filename,question_number):
     """
     Returns the question of the given number
     """
+    #Finds all questions with the given question number(There will be only on question with one question_number)
     question = re.findall(r"{}\|.*".format(question_number),open(os.getcwd()+filename).read())
-    question = re.sub(r'{}\|'.format(question_number),"",question[0])
-    return question
+    logging.debug(question)
+    # Question is a list of only one element.....question[0]->is the question.....The first 2 digits are the id of the qestion.
+    # We remove the first 2 letters and return the rest
+    # question = re.sub(r'{}\|'.format(question_number),"",question[0])-> Commented because a better solution was found
+    # logging.debug(question)
+    return question[0][2:]

@@ -38,6 +38,8 @@ def signup(request):
             functions.save_in_file('/Dashboard/files/signup.txt',user_name,password,email,phone_number)
             #redirect is used because the url is not changed when render is done..
             return redirect('http://127.0.0.1:8000/index/login/')
+        else:
+            return HttpResponse("The username is already used.....!")
     else:
         return render(request,'Dashboard/signup.html')
 
@@ -74,12 +76,12 @@ def discussion(request):
     """
     if request.method=='POST':
         comment = request.POST.get('message')
-        #Every question has a different file numbered based on their questions.
+        #Every question has a different file for comments numbered based on their questions.
         #We will take the question number from the url path save the comment in that file.
         functions.save_in_file('/Dashboard/files/discussions/discussion{}.txt'.format(request.get_full_path().split('/')[-2]),comment)
         return HttpResponse(comment)
     else:
-        #Since each discussion has its own file for discussion we will display the contents only from a one file the number is again got from the url path.
+        #Since each discussion has its own file for comments we will display the contents only from that file the number is again got from the url path.
         discussions = functions.get_comments('/Dashboard/files/discussions/discussion{}.txt'.format(request.get_full_path().split('/')[-2]))
         return render(request,"Dashboard/discussion.html",{'discussions':discussions,'user_name':request.session.get('user_name'),'length':len(discussions),'question_number':request.get_full_path().split('/')[-2]})
 
@@ -88,7 +90,7 @@ def practice(request):
     Returns the view of practice.html and pass the questions as dictionary.
     """
     questions = functions.get_contents('/Dashboard/files/questions.txt')
-    #This was done to remove the Question number from The questions...(see the question.txt)..to get an idea
+    #This was done to remove the Question number from The questions...(see the questions.txt)..to get an idea
     temp = []
     for question in questions:
         temp.append(question[2:])
@@ -106,11 +108,12 @@ def question(request):
     #Get the question selected we can get this from the path(url)
     question_number = request.get_full_path().split('/')[-1]
     #We should pass the Regular expression to the function
+    #'#####' -> is used to deifferentiate between records....
     pattern = re.compile(r'\$\${}.*?#####'.format(question_number),re.DOTALL)
     contents = functions.get_contents("/Dashboard/files/question_details.txt",pattern)
     # '#' -> Each feild is separated by #
     contents = contents.split('#')
-    # This is the Header...Which was selected.
+    # This is the Header(Question)...Which was selected.
     name = functions.get_question("/Dashboard/files/questions.txt",question_number)
     #Pass all as different because it was not working as expected
     return render(request,"Dashboard/question.html",{'task':contents[0],'input_format':contents[1],'output_format':contents[2],'sample_input':contents[3],'sample_output':contents[4],'name':name,'question_number':question_number})
