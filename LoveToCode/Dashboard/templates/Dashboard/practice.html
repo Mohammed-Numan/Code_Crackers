@@ -7,16 +7,17 @@
     <title>Practice</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'ProjectDashboard/practice.css' %}" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'ProjectDashboard/css/bootstrap.min.css' %}" />
     <link rel="stylesheet" type="text/css" media="screen" href="{% static 'ProjectDashboard/header.css' %}" />
 </head>
 
 <body>
     {% include "Dashboard/header.html" %}
+    <br />
+    <br />
     <center>
-        <h3>Solve these simple problems and climb on the leaderboard.....!</h3>
+        <i><p style="font-size:30px">Solve these simple problems and climb on the leaderboard.....!</p></i>
     </center>
-    {% for question,number in questions %}
+    {% for number,question in questions %}
     <div class="vue-wrapper">
         <div id="vue">
             <div class="question">
@@ -27,6 +28,7 @@
         </div>
     </div>
     {% endfor %}
+    <script src="{% static 'ProjectDashboard/jquery/jquery-3.3.1.min.js' %}"></script>
 </body>
 
 </html>

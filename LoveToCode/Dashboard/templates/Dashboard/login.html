@@ -2,60 +2,31 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="{% static 'ProjectDashboard/login.css' %}">
+    <link rel="stylesheet" href="{% static 'ProjectDashboard/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'ProjectDashboard/css/boilerform.min.css' %}">
 </head>
 
-<body style="background-color:#2e3646">
+<body>
+    <form class="boilerform" method="post">{% csrf_token %}
+        <h1 class="o-heading" style="padding-top:120px">Login..</h1>
+        <div class="c-signup">
+            <div class="c-signup__field c-signup__field--fill">
+                <label for="first_name" class="c-label">User name</label>
+                <input type="text" name="user_name" id="first_name" class="c-input-field" />
+            </div>
+            <div class="c-signup__field c-signup__field--fill">
+                <label for="password" class="c-label">Password</label>
+                <input type="password" name="password" id="password" class="c-input-field" />
+            </div>
 
-    <div class="content-wrapper">
-        <div class="content">
-            <div class="signup-wrapper shadow-box">
-                <div class="company-details ">
-
-                    <div class="shadow"></div>
-                    <div class="wrapper-1">
-                        <div class="logo">
-                            <div class="icon-food">
-
-                            </div>
-                        </div>
-                        <h1 class="title">Log In.</h1>
-                        <!-- <div class="slogan">Get Started.</div> -->
-                        <br/>
-                        <p style="padding-left:40px;color:white">Dont Have an Account?
-                            <a href="{% url 'Dashboard:signup' %}" style="color:red">Click here</a>
-                        </p>
-                    </div>
-
-                </div>
-                <div class="signup-form ">
-                    <div class="wrapper-2">
-                        <div class="form-title">Log In!</div>
-                        <div class="form">
-                            <form method=POST>{% csrf_token %}
-                                <p class="content-item">
-                                    <label>Full Name
-                                        <input type="text" name="user_name" required>
-                                    </label>
-                                </p>
-                                <p class="content-item">
-
-                                    <label>password
-                                        <input type="password" name="password" required="required" id="password" onkeyup='check();' />
-                                    </label>
-                                </p>
-                                <!-- <span id="message"></span> -->
-                                <button type="submit" class="signup">Login </button>
-                                <!-- <a href="#" class="login">login</a> -->
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-
+            <div class="c-signup__button">
+                <p style="float:left ">Don't have an account??
+                    <a href="{% url 'Dashboard:signup' %}" style="cursor:pointer;color:red;text-decoration:none">SignUp.</a>
+                </p>
+                <button class="c-button" type="submit">Login</button>
             </div>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 import os,re,logging
 logging.basicConfig(filename='first.log',level=logging.DEBUG, format=' %(asctime)s -%(levelname)s- %(message)s')
-# logging.disable(logging.CRITICAL)# -> This line stops logging.DEBUG to display....!If you want logging.dubug to display the comment this line...!
+#logging.disable(logging.CRITICAL)# -> This line stops logging.DEBUG to display....!If you want logging.dubug to display the comment this line...!
 
 def save_in_file(filename,*details):
     """

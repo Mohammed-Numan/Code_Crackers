@@ -1,7 +1,9 @@
 from django.shortcuts import render,redirect,render_to_response
 from django.http import HttpResponse,HttpResponseRedirect
 from . import functions
-import re
+import re,logging
+logging.basicConfig(filename='first.log',level=logging.DEBUG, format=' %(asctime)s -%(levelname)s- %(message)s')
+logging.disable(logging.CRITICAL)#->Comment this if debugging
 
 def index(request):
     """
@@ -91,13 +93,15 @@ def practice(request):
     """
     questions = functions.get_contents('/Dashboard/files/questions.txt')
     #This was done to remove the Question number from The questions...(see the questions.txt)..to get an idea
-    temp = []
-    for question in questions:
-        temp.append(question[2:])
-    questions = temp
+    # temp = []
+    # for question in questions:
+    #     temp.append(question[2:])
+    # questions = temp
     #zip with range is required so that there will be the question numbers along with the question.
     #These question numbers will be seen in the url After a question is clicked
-    questions = zip(questions,range(len(questions)))
+    # questions = zip(questions,range(len(questions)))
+    questions = (map(lambda x:x.split('|'),questions))#->Thought this one line would be much more efficient than the above lines
+    logging.debug(questions)
     return render(request,'Dashboard/practice.html',{'questions':questions})
 
 def question(request):

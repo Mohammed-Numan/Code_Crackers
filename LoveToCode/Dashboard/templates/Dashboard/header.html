@@ -1,17 +1,11 @@
-<ul class="nav">
-    <li>
-        <a href="{% url 'Dashboard:dashboard' %}">Home</a>
-    </li>
-    <li>
-        <a href="{% url 'Dashboard:practice' %}">Practice</a>
-    </li>
-    <li>
-        <a href="{% url 'Dashboard:leaderboard' %}">Leaderboard</a>
-    </li>
-    <li>
-        <a href="{% url 'Dashboard:profile' %}">Profile</a>
-    </li>
-    <li>
-        <a href="{% url 'Dashboard:index' %}">Logout</a>
-    </li>
-</ul>
+<div class="navbar">
+    <div align="right">
+      <ul>
+        <a href="{% url 'Dashboard:dashboard' %}"><li>Home</li></a>
+        <a href="{% url 'Dashboard:practice' %}"><li>Practice</li></a>
+        <a href="{% url 'Dashboard:leaderboard' %}"><li>LeaderBoard</li></a>
+        <a href="{% url 'Dashboard:profile' %}"><li>Profile</li></a>
+        <a href="{% url 'Dashboard:index' %}" id="spcl"><li>Logout</li></a>
+      </ul>
+    </div>
+  </div>
