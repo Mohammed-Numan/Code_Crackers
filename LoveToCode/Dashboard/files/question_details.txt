@@ -21,9 +21,9 @@ Alice and Bob each created one problem for HackerRank. A reviewer rates the two 
 We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
 Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
 
-    If a[i]>b[i], then Alice is awarded point.<br/>
-    If a[i]<b[i], then Bob is awarded point.<br/>
-    If a[i]=b[i], then neither person receives a point.<br/>
+    If a[i] > b[i], then Alice is awarded point.<br/>
+    If a[i] < b[i], then Bob is awarded point.<br/>
+    If a[i] = b[i], then neither person receives a point.<br/>
 <br/>
 Comparison points is the total points a person earned.<br/>
 
