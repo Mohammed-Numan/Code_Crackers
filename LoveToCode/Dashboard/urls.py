@@ -12,4 +12,5 @@ urlpatterns = [
     re_path('dashboard/practice/question/\d+$',views.question,name="question"),
     re_path('dashboard/practice/question/\d+/discussion$',views.discussion,name="discussion"),
     re_path('dashboard/practice/question/\d+/answer',views.answer,name='answer'),
+    path('dashboard/error_or_out',views.error_or_out,name="error_or_out"),
 ]

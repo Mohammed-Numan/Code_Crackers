@@ -29,3 +29,10 @@ n = int(input())
 arr = list(map(int, input().strip().split()))
 print(sum(arr))
 #####
+4|
+arr = list(map(int, input().strip().split(' ')))
+arr=sorted(list(arr))
+min=sum(arr)-arr[len(arr)-1]
+max=sum(arr)-arr[0]
+print(str(min)+" "+str(max))
+#####

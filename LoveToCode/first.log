@@ -1,266 +1,44 @@
- 2018-04-24 14:55:31,058 -DEBUG- (None, '123', 'Hello@gmail.comm', '1234567890', '0')
- 2018-04-24 14:55:31,059 -ERROR- Internal Server Error: /index/signup/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 35, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 128, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/mohammed_numan/Project/LoveToCode/Dashboard/views.py", line 41, in signup
-    functions.save_in_file('/Dashboard/files/signup.txt',user_name,password,email,phone_number,'0')
-  File "/home/mohammed_numan/Project/LoveToCode/Dashboard/functions.py", line 17, in save_in_file
-    detail+='|'
-TypeError: unsupported operand type(s) for +=: 'NoneType' and 'str'
- 2018-04-24 14:56:05,840 -DEBUG- (None, '123', 'Hello@gmail.comm', '1234567890', '0')
- 2018-04-24 14:56:05,840 -ERROR- Internal Server Error: /index/signup/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 35, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 128, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/mohammed_numan/Project/LoveToCode/Dashboard/views.py", line 41, in signup
-    functions.save_in_file('/Dashboard/files/signup.txt',user_name,password,email,phone_number,'0')
-  File "/home/mohammed_numan/Project/LoveToCode/Dashboard/functions.py", line 17, in save_in_file
-    detail+='|'
-TypeError: unsupported operand type(s) for +=: 'NoneType' and 'str'
- 2018-04-24 14:56:07,806 -DEBUG- (None, '123', 'Hello@gmail.comm', '1234567890', '0')
- 2018-04-24 14:56:07,807 -ERROR- Internal Server Error: /index/signup/
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 35, in inner
-    response = get_response(request)
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 128, in _get_response
-    response = self.process_exception_by_middleware(e, request)
-  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
-    response = wrapped_callback(request, *callback_args, **callback_kwargs)
-  File "/home/mohammed_numan/Project/LoveToCode/Dashboard/views.py", line 41, in signup
-    functions.save_in_file('/Dashboard/files/signup.txt',user_name,password,email,phone_number,'0')
-  File "/home/mohammed_numan/Project/LoveToCode/Dashboard/functions.py", line 17, in save_in_file
-    detail+='|'
-TypeError: unsupported operand type(s) for +=: 'NoneType' and 'str'
- 2018-04-24 14:56:52,675 -DEBUG- ('Hello', '123', 'Hello@gmail.comm', '1234567890', '0')
- 2018-04-24 14:57:50,730 -DEBUG- ('Hmm', '1', 'hmm@gmail.com', '1234567890', '0')
- 2018-04-24 14:58:31,929 -DEBUG- ('k', '1', 'k@gmail.com', '12', '0')
- 2018-04-24 14:59:59,828 -DEBUG- [['Hmm', '7'], ['Hello', '6'], ['Changes Done', '5'], ['Kevin Raymond', '4'], ['After changes', '3'], ['Mohammed Furqan', '2'], ['Mohammed Numan', '1'], ['k', '0']]
- 2018-04-24 14:59:59,828 -DEBUG- [['Hmm', '7', 1], ['Hello', '6', 2], ['Changes Done', '5', 3], ['Kevin Raymond', '4', 4], ['After changes', '3', 5], ['Mohammed Furqan', '2', 6], ['Mohammed Numan', '1', 7], ['k', '0', 8]]
- 2018-04-24 15:01:11,022 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-04-24 15:01:11,022 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-04-24 15:01:51,724 -DEBUG- <map object at 0x7fb2de0b30f0>
- 2018-04-24 15:01:54,394 -DEBUG- $$1
-Given an array of integers, find the sum of its elements. #
-The first line contains an integer,n, denoting the size of the array.
-The second line contains space-separated integers representing the array's elements.#
-Print the sum of the array.#
-6
-1 2 3 4 10 11#
-31#
-#####
- 2018-04-24 15:02:15,849 -DEBUG- <map object at 0x7fb2de085710>
- 2018-04-24 15:03:22,571 -DEBUG- $$2
-Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.<br/>
-We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
-Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
+ 2018-05-24 14:38:48,948 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-    If a[i] > b[i], then Alice is awarded point.<br/>
-    If a[i] < b[i], then Bob is awarded point.<br/>
-    If a[i] = b[i], then neither person receives a point.<br/>
-<br/>
-Comparison points is the total points a person earned.<br/>
+ 2018-05-24 14:38:48,988 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 0
+ 2018-05-24 14:39:31,103 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-Given and A,B can you compare the two challenges and print their respective comparison points?#
-The first line contains 3 space-separated integers describing the respective values in triplet A.<br/>
-The second line contains 3 space-separated integers describing the respective values in triplet B.#
-Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.#
-5 6 7
-3 6 10#
-1 1#
-#####
- 2018-04-24 15:03:23,733 -DEBUG- $$2
-Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.<br/>
-We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
-Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
+ 2018-05-24 14:39:42,848 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-    If a[i] > b[i], then Alice is awarded point.<br/>
-    If a[i] < b[i], then Bob is awarded point.<br/>
-    If a[i] = b[i], then neither person receives a point.<br/>
-<br/>
-Comparison points is the total points a person earned.<br/>
+ 2018-05-24 14:39:42,888 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 
+ 2018-05-24 14:40:10,072 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-Given and A,B can you compare the two challenges and print their respective comparison points?#
-The first line contains 3 space-separated integers describing the respective values in triplet A.<br/>
-The second line contains 3 space-separated integers describing the respective values in triplet B.#
-Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.#
-5 6 7
-3 6 10#
-1 1#
-#####
- 2018-04-24 15:05:05,151 -DEBUG- <map object at 0x7fd6a5eea6d8>
- 2018-04-24 15:05:08,577 -DEBUG- $$2
-Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.<br/>
-We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
-Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
+ 2018-05-24 14:40:10,113 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 
+ 2018-05-24 14:40:21,005 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-    If a[i] > b[i], then Alice is awarded point.<br/>
-    If a[i] < b[i], then Bob is awarded point.<br/>
-    If a[i] = b[i], then neither person receives a point.<br/>
-<br/>
-Comparison points is the total points a person earned.<br/>
+ 2018-05-24 14:40:21,047 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 0
+ 2018-05-24 14:41:35,878 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-Given and A,B can you compare the two challenges and print their respective comparison points?#
-The first line contains 3 space-separated integers describing the respective values in triplet A.<br/>
-The second line contains 3 space-separated integers describing the respective values in triplet B.#
-Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.#
-5 6 7
-3 6 10#
-1 1#
-#####
- 2018-04-24 15:05:10,259 -DEBUG- <map object at 0x7fd6a5eb9a58>
- 2018-04-25 07:45:40,259 -WARNING- Not Found: /
- 2018-04-25 07:45:40,580 -WARNING- Not Found: /favicon.ico
- 2018-04-25 07:46:27,910 -DEBUG- <map object at 0x7f36466ac438>
- 2018-04-25 07:46:30,684 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-04-25 07:46:30,685 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-04-25 07:46:39,906 -DEBUG- <map object at 0x7f3645e10550>
- 2018-04-25 07:46:42,530 -DEBUG- $$1
-Given an array of integers, find the sum of its elements. #
-The first line contains an integer,n, denoting the size of the array.
-The second line contains space-separated integers representing the array's elements.#
-Print the sum of the array.#
-6
-1 2 3 4 10 11#
-31#
-#####
- 2018-04-25 07:47:29,166 -DEBUG- ['n = int(input())', 'arr = list(map(int, input().strip().split()))', 'print(sum(arr))']
- 2018-04-25 07:47:30,984 -DEBUG- <map object at 0x7f3645e10710>
- 2018-04-25 07:48:54,276 -DEBUG- <map object at 0x7f32ab311fd0>
- 2018-04-25 07:49:10,063 -DEBUG- <map object at 0x7f32a874c4a8>
- 2018-04-25 07:49:11,177 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-04-25 07:49:11,177 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-04-25 07:49:12,491 -DEBUG- <map object at 0x7f32a9fb5b00>
- 2018-04-26 17:15:59,825 -WARNING- Not Found: /favicon.ico
- 2018-04-26 17:15:59,832 -WARNING- Not Found: /favicon.ico
- 2018-05-13 03:26:16,254 -WARNING- Not Found: /
- 2018-05-13 03:26:16,913 -WARNING- Not Found: /favicon.ico
- 2018-05-13 03:26:17,110 -WARNING- Not Found: /favicon.ico
- 2018-05-13 03:27:09,778 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 03:27:09,778 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 03:27:28,178 -DEBUG- <map object at 0x7fcaa1adce48>
- 2018-05-13 03:27:37,618 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 03:27:37,618 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 03:27:41,728 -DEBUG- <map object at 0x7fcaa02468d0>
- 2018-05-13 05:13:13,177 -WARNING- Forbidden (CSRF token missing or incorrect.): /index/dashboard/profile
- 2018-05-13 05:13:30,239 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 05:13:30,239 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 05:13:31,977 -DEBUG- <map object at 0x7fcaa0259048>
- 2018-05-13 05:13:40,195 -DEBUG- <map object at 0x7fcaa0246320>
- 2018-05-13 05:13:42,825 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 05:13:42,825 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 05:14:47,261 -DEBUG- <map object at 0x7fcaa0266320>
- 2018-05-13 05:14:49,187 -DEBUG- $$1
-Given an array of integers, find the sum of its elements. #
-The first line contains an integer,n, denoting the size of the array.
-The second line contains space-separated integers representing the array's elements.#
-Print the sum of the array.#
-6
-1 2 3 4 10 11#
-31#
-#####
- 2018-05-13 05:15:43,799 -DEBUG- ['n = int(input())', 'arr = list(map(int, input().strip().split()))', 'print(sum(arr))']
- 2018-05-13 05:15:48,293 -DEBUG- <map object at 0x7fcaa2de1160>
- 2018-05-13 06:43:09,395 -WARNING- Not Found: /
- 2018-05-13 06:53:29,105 -DEBUG- <map object at 0x7fcaa0262358>
- 2018-05-13 06:53:30,429 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 06:53:30,429 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 06:53:38,782 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 06:53:38,782 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 06:53:40,315 -DEBUG- <map object at 0x7fcaa0262fd0>
- 2018-05-13 06:53:42,250 -DEBUG- $$1
-Given an array of integers, find the sum of its elements. #
-The first line contains an integer,n, denoting the size of the array.
-The second line contains space-separated integers representing the array's elements.#
-Print the sum of the array.#
-6
-1 2 3 4 10 11#
-31#
-#####
- 2018-05-13 06:53:44,957 -DEBUG- ['n = int(input())', 'arr = list(map(int, input().strip().split()))', 'print(sum(arr))']
- 2018-05-13 06:53:47,564 -DEBUG- $$1
-Given an array of integers, find the sum of its elements. #
-The first line contains an integer,n, denoting the size of the array.
-The second line contains space-separated integers representing the array's elements.#
-Print the sum of the array.#
-6
-1 2 3 4 10 11#
-31#
-#####
- 2018-05-13 06:53:49,248 -DEBUG- <map object at 0x7fcaa02620f0>
- 2018-05-13 06:53:51,030 -DEBUG- <map object at 0x7fcaa0246c50>
- 2018-05-13 06:53:53,495 -DEBUG- $$2
-Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.<br/>
-We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
-Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
+ 2018-05-24 14:41:38,500 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 0
 
-    If a[i] > b[i], then Alice is awarded point.<br/>
-    If a[i] < b[i], then Bob is awarded point.<br/>
-    If a[i] = b[i], then neither person receives a point.<br/>
-<br/>
-Comparison points is the total points a person earned.<br/>
+ 2018-05-24 14:41:41,420 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-Given and A,B can you compare the two challenges and print their respective comparison points?#
-The first line contains 3 space-separated integers describing the respective values in triplet A.<br/>
-The second line contains 3 space-separated integers describing the respective values in triplet B.#
-Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.#
-5 6 7
-3 6 10#
-1 1#
-#####
- 2018-05-13 06:53:55,840 -DEBUG- ['a = list(map(int, input().strip().split()))', 'b = list(map(int, input().strip().split()))', 'score_alice = 0', 'score_bob = 0', 'if a[0] > b[0]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[1] > b[1]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[2] > b[2]:', '    score_alice += 1', 'else:', '    score_bob  += 1']
- 2018-05-13 06:54:44,969 -DEBUG- ['a = list(map(int, input().strip().split()))', 'b = list(map(int, input().strip().split()))', 'score_alice = 0', 'score_bob = 0', 'if a[0] > b[0]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[1] > b[1]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[2] > b[2]:', '    score_alice += 1', 'else:', '    score_bob  += 1']
- 2018-05-13 06:54:48,115 -DEBUG- $$2
-Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.<br/>
-We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
-Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
+ 2018-05-24 14:41:49,048 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
 
-    If a[i] > b[i], then Alice is awarded point.<br/>
-    If a[i] < b[i], then Bob is awarded point.<br/>
-    If a[i] = b[i], then neither person receives a point.<br/>
-<br/>
-Comparison points is the total points a person earned.<br/>
+ 2018-05-24 14:41:49,804 -DEBUG- The Excepted output is 2 0
+ Actual output is 2
 
-Given and A,B can you compare the two challenges and print their respective comparison points?#
-The first line contains 3 space-separated integers describing the respective values in triplet A.<br/>
-The second line contains 3 space-separated integers describing the respective values in triplet B.#
-Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.#
-5 6 7
-3 6 10#
-1 1#
-#####
- 2018-05-13 06:55:13,091 -DEBUG- ['a = list(map(int, input().strip().split()))', 'b = list(map(int, input().strip().split()))', 'score_alice = 0', 'score_bob = 0', 'if a[0] > b[0]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[1] > b[1]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[2] > b[2]:', '    score_alice += 1', 'else:', '    score_bob  += 1']
- 2018-05-13 06:55:14,365 -DEBUG- <map object at 0x7fcaa027a7f0>
- 2018-05-13 06:55:18,679 -DEBUG- <map object at 0x7fcaa1adcd30>
- 2018-05-13 06:55:20,095 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 06:55:20,095 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 06:55:21,710 -DEBUG- <map object at 0x7fcaa0251470>
- 2018-05-13 06:55:28,346 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-13 06:55:28,346 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-13 06:55:30,258 -DEBUG- <map object at 0x7fcaa026c6d8>
- 2018-05-13 06:55:39,689 -DEBUG- <map object at 0x7fcaa025e080>
- 2018-05-16 04:32:39,417 -WARNING- Not Found: /
- 2018-05-16 04:32:39,574 -WARNING- Not Found: /favicon.ico
- 2018-05-16 04:32:39,580 -WARNING- Not Found: /favicon.ico
- 2018-05-16 04:33:53,616 -DEBUG- [['Mohammed Furqan', '1028'], ['Kevin Raymond', '900'], ['Mohammed Numan', '110'], ['After changes', '30'], ['Hello', '11'], ['Changes Done', '10'], ['Hmm', '1'], ['k', '0']]
- 2018-05-16 04:33:53,616 -DEBUG- [['Mohammed Furqan', '1028', 1], ['Kevin Raymond', '900', 2], ['Mohammed Numan', '110', 3], ['After changes', '30', 4], ['Hello', '11', 5], ['Changes Done', '10', 6], ['Hmm', '1', 7], ['k', '0', 8]]
- 2018-05-16 04:33:57,867 -DEBUG- <map object at 0x7f4b5a1d1940>
- 2018-05-16 04:34:00,213 -DEBUG- $$0
-To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.<br/>
-You've got this!#
-A single line of text denoting inputString(the variable whose contents must be printed).#
-Print Hello, World. on the first line, and the contents of input string on the second line.#
-Welcome to 30 Days of Code!.#
-Hello, World.<br/>
-Welcome to 30 Days of Code.#
-#####
- 2018-05-16 04:34:17,514 -DEBUG- ['print("Hello World")']
- 2018-05-16 04:34:18,851 -DEBUG- <map object at 0x7f4b5a9c5a90>
+ 2018-05-24 14:41:55,232 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
+
+ 2018-05-24 14:41:56,018 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 0
+
