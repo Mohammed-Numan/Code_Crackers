@@ -1,0 +1,40 @@
+#1
+0
+30
+Mohammed Numan
+#2
+0 1 2
+10
+Mohammed Furqan
+#3
+0
+5
+Mukesh
+#4
+0
+5
+Kevin Raymond
+#5
+0 1 2
+15
+Piyush
+#6
+0
+5
+Hello
+#7
+0
+5
+Hmm
+#8
+0
+5
+Kevin
+#9
+-1 0 1 2 4
+10
+Brother
+#10
+-1 0 1 2
+10
+Final Check

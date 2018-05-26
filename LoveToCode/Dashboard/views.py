@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
+from django.contrib import messages
 from . import functions
 import re
 import logging
@@ -44,9 +45,10 @@ def signup(request):
         phone_number = request.POST.get('phone_number')
         if not functions.check_if_exist('/Dashboard/files/signup.txt', user_name, email):
             logging.debug(
-                tuple([user_name, password, email, phone_number, '0']))
-            functions.save_in_file(
-                '/Dashboard/files/signup.txt', user_name, password, email, phone_number, '0')
+                tuple([user_name, password, email, phone_number]))
+            id = functions.save_in_file(
+                '/Dashboard/files/signup.txt', user_name, password, email, phone_number)
+            functions.create_points_entry(id, -1, 0, user_name)
             # redirect is used because the url is not changed when render is done..
             return redirect('http://127.0.0.1:8000/index/login/')
         else:
@@ -71,6 +73,7 @@ def login(request):
             # Saves the username in session(Dictionary like DataStructure).Saving it in session
             # because we cannot pass 2nd argument to redirect...
             request.session['id'] = id
+            request.session['username'] = user_name
             return redirect('http://127.0.0.1:8000/index/dashboard/')
         else:
             return HttpResponse("Not Authenticated....!Please Signup First.....!")
@@ -79,7 +82,9 @@ def login(request):
 
 
 def dashboard(request):
-    return render(request, "Dashboard/dashboard.html", {'id': request.session.get('id')})
+    questions = functions.get_contents('/Dashboard/files/questions.txt')
+    questions = (map(lambda x: x.split('|'), questions))
+    return render(request, "Dashboard/dashboard.html", {'id': request.session.get('username'),'questions':questions})
 
 
 def discussion(request):
@@ -92,16 +97,27 @@ def discussion(request):
         comment = request.POST.get('message')
         # Every question has a different file for comments numbered based on their questions.
         # We will take the question number from the url path save the comment in that file.
-        functions.save_in_file('/Dashboard/files/discussions/discussion{}.txt'.format(
-            request.get_full_path().split('/')[-2]), comment)
+        #functions.save_in_file('/Dashboard/files/discussions/discussion{}.txt'.format(
+        #    request.get_full_path().split('/')[-2]), comment)
+        functions.add_username('/Dashboard/files/discussions/discussion{}.txt'.format(request.get_full_path().split('/')[-2]), comment, request.session['username'])
         discussions = functions.get_comments(
             '/Dashboard/files/discussions/discussion{}.txt'.format(request.get_full_path().split('/')[-2]))
-        return render(request, "Dashboard/discussion.html", {'discussions': discussions, 'user_name': request.session.get('user_name'), 'length': len(discussions), 'question_number': request.get_full_path().split('/')[-2]})
+        #functions.add_username(request.session['user_name'], '/Dashboard/files/discussions/discussion{}.txt'.format(request.get_full_path().split('/')[-2]))
+        # required = []
+        # for discussion in discussions:
+        #     required.append(discussion.split('###'))
+        required = [x.split("###") for x in discussions]
+        logging.debug(required)
+        required = tuple(map(tuple, required))#Required to get the username of the guy who commented
+        return render(request, "Dashboard/discussion.html", {'discussions': required, 'user_name': request.session.get('user_name'), 'length': len(discussions), 'question_number': request.get_full_path().split('/')[-2]})
     else:
         # Since each discussion has its own file for comments we will display the contents only from that file the number is again got from the url path.
         discussions = functions.get_comments(
             '/Dashboard/files/discussions/discussion{}.txt'.format(request.get_full_path().split('/')[-2]))
-        return render(request, "Dashboard/discussion.html", {'discussions': discussions, 'user_name': request.session.get('user_name'), 'length': len(discussions), 'question_number': request.get_full_path().split('/')[-2]})
+        required = [x.split("###") for x in discussions]
+        required = list(map(tuple, required))
+        logging.debug(required)
+        return render(request, "Dashboard/discussion.html", {'discussions': required, 'user_name': request.session.get('user_name'), 'length': len(discussions), 'question_number': request.get_full_path().split('/')[-2]})
 
 
 def practice(request):
@@ -189,6 +205,7 @@ def question(request):
 
 def leaderboard(request):
     users = functions.get_points()
+    logging.debug(users)
     return render(request, "Dashboard/leaderboard.html", {'users': users})
 
 
@@ -196,15 +213,29 @@ def answer(request):
     answer = functions.get_answer(
         "/Dashboard/files/answers.txt", request.get_full_path().split('/')[-2])
     # Question should be sent so that it can go back to that question.....!
+    functions.remove_points(request.session['id'], request.session['question'])
     answer = "<br />".join(answer)
     return render(request, "Dashboard/answer.html", {'question_number': request.get_full_path().split('/')[-2], 'answer': answer})
 
 
 def profile(request):
-    return render(request, "Dashboard/profile.html")
+    if request.method == 'POST':
+        username = request.POST.get('new_username')
+        #current_password = request.POST['currentPassword']
+        password = request.POST.get('newPassword')
+        if username:
+            functions.update(request.session['username'], request.session['id'], 0, username)
+            request.session['username'] = username
+        if password:
+            functions.update(request.session['username'], request.session['id'], 1, password)
+        return render(request, "Dashboard/profile.html", {'u':request.session['username']})
+    return render(request, "Dashboard/profile.html", {'u':request.session['username']})
 
 
 def error_or_out(request):
+    """
+    Calls as ajax call when the code is written and submitted.....!
+    """
     out,error = 0,0
     language = request.POST.get('language')
     program = request.POST.get('program')
@@ -280,4 +311,5 @@ def error_or_out(request):
             response = HttpResponse("Your code did not pass the test cases.....!")
             response.status_code = 400
             return response
-        return HttpResponse('Congractulations You Passed the test....!')
+        functions.give_points(request.session['question'],request.session['id'])
+        return HttpResponse('Congratulations You Passed the test....!')

@@ -18,6 +18,7 @@ def save_in_file(filename, *details):
             file.write(detail)
         file.write(id)
         file.write('\n')
+    return id
 
 def authenticate(filename, *credentials):
     """
@@ -41,7 +42,7 @@ def get_id(filename):
     try:
         last_record = open(os.getcwd()+filename).readlines()[-1]
         #Id is the last feild of each record.Hence the max id is the last feild of the last record.
-        max_id = last_record.split('|')[-2]
+        max_id = last_record.split('|')[-1]
         return int(max_id)+1
     except:
         #This is executed if the file has Zero records i.e 1 will be the id of the first record.
@@ -110,14 +111,88 @@ def get_points():
     """
     Returns the points of the users
     """
-    users = open(os.getcwd()+'/Dashboard/files/signup.txt').readlines()
-    users = [user.split('|')  for user in users]
-    # logging.debug(users)
-    users = [[user[0],user[-2].strip()]  for user in users]
-    # logging.debug(users)
-    users.sort(key=lambda x:int(x[1]), reverse=True)
+    answered = open("answered_questions.txt").read()
+    users = []
+    users_answered = answered.split("#")
+    logging.debug(users_answered)
+    for user in users_answered[1:]:
+        logging.debug("The user is "+"".join(user))
+        div = user.split('\n')
+        points = div[2]
+        name = div[3]
+        users.append([points, name])
     logging.debug(users)
-    for i in range(len(users)):
-        users[i].append(i+1)
+    users.sort(key=lambda x:int(x[0]), reverse=True)
+    users = list(enumerate(users))
     logging.debug(users)
     return users
+
+def give_points(question_number, id):
+    answered = open("answered_questions.txt").read()
+    users_answered = answered.split("#")
+    for users in users_answered[1:]:
+        user = users.split('\n')
+        now_answered = user[1]
+        points = user[2]
+        if str(user[0].strip()) == str(id.strip()):
+            if question_number not in user[1].split(' '):
+                points = int(user[2].strip())
+                points += 5
+                now_answered = user[1] + " " + question_number
+        with open("new_answered_questions.txt","a") as f:
+            f.write("#"+user[0]+"\n"+now_answered+"\n"+str(points)+"\n"+user[-2]+"\n")
+    os.remove('answered_questions.txt')
+    os.rename('new_answered_questions.txt', 'answered_questions.txt')
+
+def add_username(filename, *details):
+    """
+    Adds the username to the given discussion file
+    """
+    id = str(get_id(filename))
+    # path = filename.split('/') This was done to keep it compatible with Windows...
+    # filename = os.sep.join(path)
+    logging.debug("The details are "+" ".join(details))
+    with open(os.getcwd()+filename, 'a') as file:
+        file.write(details[0])
+        file.write("###")
+        file.write(details[1])
+        file.write('\n')
+        file.write('|')
+        file.write(id)
+        file.write('\n')
+        
+def remove_points(id, question_number):
+    answered = open("answered_questions.txt").read()
+    users_answered = answered.split("#")
+    for users in users_answered[1:]:
+        user = users.split('\n')
+        logging.debug(user)
+        now_answered = user[1]
+        points = user[2]
+        logging.debug(user[0].strip()+" Id is "+id.strip())
+        if str(user[0].strip()) == str(id.strip()):
+            if question_number not in user[1].split(' '):
+                logging.debug("Into The iff....")
+                logging.debug(now_answered)
+                now_answered = user[1] + " " + question_number
+        with open("new_answered_questions.txt","a") as f:
+            f.write("#"+user[0]+"\n"+now_answered+"\n"+str(points)+"\n"+user[-2]+"\n")
+    os.remove('answered_questions.txt')
+    os.rename('new_answered_questions.txt', 'answered_questions.txt')
+
+def create_points_entry(id, answered, points, user_name):
+    with open("answered_questions.txt", 'a') as f:
+        f.write("#"+id+"\n"+str(answered)+"\n"+str(points)+"\n"+user_name+"\n")
+
+def update(username, id, field, new_detail):
+    users = open('Dashboard/files/signup.txt').readlines()
+    with open('Dashboard/files/new_signup.txt','a') as f:
+        for user in users:
+            details = user.split('|')
+            if str(details[0].strip()) == str(username):
+                logging.debug("Inside if......!")
+                details = details[:field] + [new_detail] + details[field+1:]
+                logging.debug(details)
+            f.write("|".join(details))
+    os.remove('Dashboard/files/signup.txt')
+    os.rename('Dashboard/files/new_signup.txt', 'Dashboard/files/signup.txt')

@@ -30,17 +30,17 @@
                     </div>
                 </div>
             </div>
-            {% for user,points,number in users %}
+            {% for number,list in users %}
             <div class="leaderboard--list">
                 <div class="leaderboard--item">
                     <div class="leaderboard--item--cell leaderboard--item--cell__rank">
                         {{number}}
                     </div>
                     <div class="leaderboard--item--cell leaderboard--item--cell__user">
-                        {{user}}
+                        {{list.1}}
                     </div>
                     <div class="leaderboard--item--cell leaderboard--item--cell__alltime">
-                        {{points}}
+                        {{list.0}}
                     </div>
                 </div>
             </div>

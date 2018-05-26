@@ -13,7 +13,14 @@
     <br/>
     <br/>
     <br/>
-    <h3>Your id is {{id}}</h3>
+    <center><h3>Hello {{id}}</h3></center>
+    <center><h2>Here Are some Newly added questions....!See if you can answer them</h2></center>
+    
+    <ul>
+        {% for number, question in questions %}
+        <li><a href="/index/dashboard/practice/question/{{number}}">{{question}}</a></li>
+        {% endfor %}
+    </ul>
     <script src="{% static 'ProjectDashboard/jquery/jquery-3.3.1.min.js' %}"></script>
 </body>
 </html>

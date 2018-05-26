@@ -27,13 +27,13 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2 well">
-                        <form id="form" accept-charset="UTF-8" class="form-horizontal" method="post">
+                        <form id="form" accept-charset="UTF-8" class="form-horizontal" method="post">{% csrf_token %}
                             <div class="form-inputs">
                                 <div class="form-group">
                                     <label class="control-label col-sm-3 col-md-4" for="current_password">Current UserName : </label>
                                     <div class="col-sm-9 col-md-8">
                                         <!-- <input autocomplete="current-password" class="form-control" id="current_password" name="currentPassword" required="" type="password"> -->
-                                        <label>Mohammed Numan</label>
+                                        <label>{{ u }}</label>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -55,7 +55,7 @@
 
     <!-- Change EmailId -->
 
-    <div class="container-fluid">
+    <!-- <div class="container-fluid">
         <div class="row">
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-xs-12 main">
                 <div class="page-header">
@@ -68,7 +68,7 @@
                                 <div class="form-group">
                                     <label class="control-label col-sm-3 col-md-4" for="current_password">Current EmailId : </label>
                                     <div class="col-sm-9 col-md-8">
-                                        <!-- <input autocomplete="current-password" class="form-control" id="current_password" name="currentPassword" required="" type="password"> -->
+                                        <!-- <input autocomplete="current-password" class="form-control" id="current_password" name="currentPassword" required="" type="password"> >
                                         <label>mohammednuman.amc@gmail.com</label>
                                     </div>
                                 </div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Change The Password.....! -->
@@ -99,14 +99,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-10 col-md-push-1 col-lg-8 col-lg-push-2 well">
-                        <form id="form" accept-charset="UTF-8" autocomplete="on" class="form-horizontal" method="post">
+                        <form id="form" accept-charset="UTF-8" autocomplete="on" class="form-horizontal" method="post">{% csrf_token %}
                             <div class="form-inputs">
-                                <div class="form-group">
-                                    <label class="control-label col-sm-3 col-md-4" for="current_password">Current password:*</label>
-                                    <div class="col-sm-9 col-md-8">
-                                        <input autocomplete="current-password" class="form-control" id="current_password" name="currentPassword" required="" type="password">
-                                    </div>
-                                </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-3 col-md-4" for="new_password">Password:*</label>
                                     <div class="col-sm-9 col-md-8">
@@ -129,6 +123,16 @@
             </div>
         </div>
     </div>
+    <!-- <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 col-xs-12 main">
+                    <div class="page-header">
+                        <h1>Delete Your Account?</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div> -->
     <script>
         var newPassword = document.getElementById("new_password");
         var confirmPassword = document.getElementById("confirm_password");

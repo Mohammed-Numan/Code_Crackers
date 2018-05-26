@@ -31,9 +31,9 @@
     <div class="comments">
         {% for discussion in discussions %}
         <div id="p">
-            {{discussion|safe}}
+            {{discussion.0|safe}}
             <p style="float:right">
-                <b>By : {{user_name}}</b>
+                <b>By : {{discussion.1}}</b>
             </p>
             <br />
         </div>

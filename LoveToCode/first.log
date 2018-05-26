@@ -1,44 +1,584 @@
- 2018-05-24 14:38:48,948 -DEBUG- Question Number is 2The test case is 6 9 2
+ 2018-05-26 04:57:21,502 -DEBUG- ['Mohammed Numan', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 04:57:21,502 -DEBUG- Checking 1 and 1
+
+ 2018-05-26 04:57:21,502 -DEBUG- ['Mohammed Furqan', 'furqan123', 'furqan.alameen@gmail.com', '7760841680', '2\n']
+ 2018-05-26 04:57:21,502 -DEBUG- Checking 2 and 1
+
+ 2018-05-26 04:57:21,503 -DEBUG- ['Mukesh', '12', 'after@gmail.com', '12345', '3\n']
+ 2018-05-26 04:57:21,503 -DEBUG- Checking 3 and 1
+
+ 2018-05-26 04:57:21,503 -DEBUG- ['Kevin Raymond', '12345', 'kevin@gmail.com', '1234567890', '4\n']
+ 2018-05-26 04:57:21,503 -DEBUG- Checking 4 and 1
+
+ 2018-05-26 04:57:21,503 -DEBUG- ['Piyush', '12345', 'done@gmil.com', '9663015381', '5\n']
+ 2018-05-26 04:57:21,503 -DEBUG- Checking 5 and 1
+
+ 2018-05-26 04:57:21,503 -DEBUG- ['Hello', '123', 'Hello@gmail.comm', '1234567890', '6\n']
+ 2018-05-26 04:57:21,503 -DEBUG- Checking 6 and 1
+
+ 2018-05-26 04:57:21,503 -DEBUG- ['Hmm', '1', 'hmm@gmail.com', '1234567890', '7\n']
+ 2018-05-26 04:57:21,504 -DEBUG- Checking 7 and 1
+
+ 2018-05-26 04:57:21,504 -DEBUG- ['k', '1', 'k@gmail.com', '12345678', '8\n']
+ 2018-05-26 04:57:21,504 -DEBUG- Checking 8 and 1
+
+ 2018-05-26 04:57:21,504 -DEBUG- ['Brother', '12', 'brother@gmail.com', '96', '9\n']
+ 2018-05-26 04:57:21,504 -DEBUG- Checking 9 and 1
+
+ 2018-05-26 04:58:13,999 -DEBUG- ['Mohammed Numan', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 04:58:13,999 -DEBUG- Checking 1 and 1
+
+ 2018-05-26 04:58:13,999 -DEBUG- ['Mohammed Furqan', 'furqan123', 'furqan.alameen@gmail.com', '7760841680', '2\n']
+ 2018-05-26 04:58:13,999 -DEBUG- Checking 2 and 1
+
+ 2018-05-26 04:58:13,999 -DEBUG- ['Mukesh', '12', 'after@gmail.com', '12345', '3\n']
+ 2018-05-26 04:58:13,999 -DEBUG- Checking 3 and 1
+
+ 2018-05-26 04:58:14,000 -DEBUG- ['Kevin Raymond', '12345', 'kevin@gmail.com', '1234567890', '4\n']
+ 2018-05-26 04:58:14,000 -DEBUG- Checking 4 and 1
+
+ 2018-05-26 04:58:14,000 -DEBUG- ['Piyush', '12345', 'done@gmil.com', '9663015381', '5\n']
+ 2018-05-26 04:58:14,000 -DEBUG- Checking 5 and 1
+
+ 2018-05-26 04:58:14,000 -DEBUG- ['Hello', '123', 'Hello@gmail.comm', '1234567890', '6\n']
+ 2018-05-26 04:58:14,000 -DEBUG- Checking 6 and 1
+
+ 2018-05-26 04:58:14,000 -DEBUG- ['Hmm', '1', 'hmm@gmail.com', '1234567890', '7\n']
+ 2018-05-26 04:58:14,000 -DEBUG- Checking 7 and 1
+
+ 2018-05-26 04:58:14,000 -DEBUG- ['k', '1', 'k@gmail.com', '12345678', '8\n']
+ 2018-05-26 04:58:14,000 -DEBUG- Checking 8 and 1
+
+ 2018-05-26 04:58:14,000 -DEBUG- ['Brother', '12', 'brother@gmail.com', '96', '9\n']
+ 2018-05-26 04:58:14,000 -DEBUG- Checking 9 and 1
+
+ 2018-05-26 04:59:47,476 -DEBUG- ['Mohammed Numan', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 04:59:47,476 -DEBUG- Checking 1 and 1
+
+ 2018-05-26 04:59:47,476 -DEBUG- Inside if......!
+ 2018-05-26 04:59:47,476 -DEBUG- ['Hello World', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 04:59:47,476 -DEBUG- ['Mohammed Furqan', 'furqan123', 'furqan.alameen@gmail.com', '7760841680', '2\n']
+ 2018-05-26 04:59:47,476 -DEBUG- Checking 2 and 1
+
+ 2018-05-26 04:59:47,476 -DEBUG- ['Mukesh', '12', 'after@gmail.com', '12345', '3\n']
+ 2018-05-26 04:59:47,476 -DEBUG- Checking 3 and 1
+
+ 2018-05-26 04:59:47,476 -DEBUG- ['Kevin Raymond', '12345', 'kevin@gmail.com', '1234567890', '4\n']
+ 2018-05-26 04:59:47,476 -DEBUG- Checking 4 and 1
+
+ 2018-05-26 04:59:47,476 -DEBUG- ['Piyush', '12345', 'done@gmil.com', '9663015381', '5\n']
+ 2018-05-26 04:59:47,476 -DEBUG- Checking 5 and 1
+
+ 2018-05-26 04:59:47,476 -DEBUG- ['Hello', '123', 'Hello@gmail.comm', '1234567890', '6\n']
+ 2018-05-26 04:59:47,476 -DEBUG- Checking 6 and 1
+
+ 2018-05-26 04:59:47,476 -DEBUG- ['Hmm', '1', 'hmm@gmail.com', '1234567890', '7\n']
+ 2018-05-26 04:59:47,477 -DEBUG- Checking 7 and 1
+
+ 2018-05-26 04:59:47,477 -DEBUG- ['k', '1', 'k@gmail.com', '12345678', '8\n']
+ 2018-05-26 04:59:47,477 -DEBUG- Checking 8 and 1
+
+ 2018-05-26 04:59:47,477 -DEBUG- ['Brother', '12', 'brother@gmail.com', '96', '9\n']
+ 2018-05-26 04:59:47,477 -DEBUG- Checking 9 and 1
+
+ 2018-05-26 05:00:28,136 -DEBUG- ['Mohammed Numan', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 05:00:28,136 -DEBUG- Checking 1 and 1
+
+ 2018-05-26 05:00:28,136 -DEBUG- Inside if......!
+ 2018-05-26 05:00:28,136 -DEBUG- ['Hmm', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 05:00:28,136 -DEBUG- ['Mohammed Furqan', 'furqan123', 'furqan.alameen@gmail.com', '7760841680', '2\n']
+ 2018-05-26 05:00:28,136 -DEBUG- Checking 2 and 1
+
+ 2018-05-26 05:00:28,136 -DEBUG- ['Mukesh', '12', 'after@gmail.com', '12345', '3\n']
+ 2018-05-26 05:00:28,136 -DEBUG- Checking 3 and 1
+
+ 2018-05-26 05:00:28,136 -DEBUG- ['Kevin Raymond', '12345', 'kevin@gmail.com', '1234567890', '4\n']
+ 2018-05-26 05:00:28,136 -DEBUG- Checking 4 and 1
+
+ 2018-05-26 05:00:28,136 -DEBUG- ['Piyush', '12345', 'done@gmil.com', '9663015381', '5\n']
+ 2018-05-26 05:00:28,136 -DEBUG- Checking 5 and 1
+
+ 2018-05-26 05:00:28,136 -DEBUG- ['Hello', '123', 'Hello@gmail.comm', '1234567890', '6\n']
+ 2018-05-26 05:00:28,136 -DEBUG- Checking 6 and 1
+
+ 2018-05-26 05:00:28,137 -DEBUG- ['Hmm', '1', 'hmm@gmail.com', '1234567890', '7\n']
+ 2018-05-26 05:00:28,137 -DEBUG- Checking 7 and 1
+
+ 2018-05-26 05:00:28,137 -DEBUG- ['k', '1', 'k@gmail.com', '12345678', '8\n']
+ 2018-05-26 05:00:28,137 -DEBUG- Checking 8 and 1
+
+ 2018-05-26 05:00:28,137 -DEBUG- ['Brother', '12', 'brother@gmail.com', '96', '9\n']
+ 2018-05-26 05:00:28,137 -DEBUG- Checking 9 and 1
+
+ 2018-05-26 05:02:43,652 -DEBUG- Inside if......!
+ 2018-05-26 05:02:43,652 -DEBUG- ['College', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 05:04:34,025 -DEBUG- Inside if......!
+ 2018-05-26 05:04:34,025 -DEBUG- ['College', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 05:04:40,798 -DEBUG- Inside if......!
+ 2018-05-26 05:04:40,799 -DEBUG- ['Hello World', 'numan123', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 05:05:07,985 -DEBUG- Inside if......!
+ 2018-05-26 05:05:07,986 -DEBUG- ['Hello World', 'numan456', 'mohammednuman.amc@gmail.com', '9663015381', '1\n']
+ 2018-05-26 05:05:59,804 -DEBUG- ['', '1\n0\n30\nMohammed Numan\n', '2\n0 1 2\n10\nMohammed Furqan\n', '3\n0\n5\nMukesh\n', '4\n0\n5\nKevin Raymond\n', '5\n0 1 2\n15\nPiyush\n', '6\n0\n5\nHello\n', '7\n0\n5\nHmm\n', '8\n0\n5\nKevin\n', '9\n-1 0 1 2 4\n10\nBrother\n']
+ 2018-05-26 05:05:59,804 -DEBUG- The user is 1
+0
+30
+Mohammed Numan
+
+ 2018-05-26 05:05:59,804 -DEBUG- The user is 2
+0 1 2
+10
+Mohammed Furqan
+
+ 2018-05-26 05:05:59,805 -DEBUG- The user is 3
+0
+5
+Mukesh
+
+ 2018-05-26 05:05:59,805 -DEBUG- The user is 4
+0
+5
+Kevin Raymond
+
+ 2018-05-26 05:05:59,805 -DEBUG- The user is 5
+0 1 2
+15
+Piyush
+
+ 2018-05-26 05:05:59,805 -DEBUG- The user is 6
+0
+5
+Hello
+
+ 2018-05-26 05:05:59,805 -DEBUG- The user is 7
+0
+5
+Hmm
+
+ 2018-05-26 05:05:59,806 -DEBUG- The user is 8
+0
+5
+Kevin
+
+ 2018-05-26 05:05:59,806 -DEBUG- The user is 9
+-1 0 1 2 4
+10
+Brother
+
+ 2018-05-26 05:05:59,806 -DEBUG- [['30', 'Mohammed Numan'], ['10', 'Mohammed Furqan'], ['5', 'Mukesh'], ['5', 'Kevin Raymond'], ['15', 'Piyush'], ['5', 'Hello'], ['5', 'Hmm'], ['5', 'Kevin'], ['10', 'Brother']]
+ 2018-05-26 05:05:59,807 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['5', 'Mukesh']), (5, ['5', 'Kevin Raymond']), (6, ['5', 'Hello']), (7, ['5', 'Hmm']), (8, ['5', 'Kevin'])]
+ 2018-05-26 05:05:59,807 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['5', 'Mukesh']), (5, ['5', 'Kevin Raymond']), (6, ['5', 'Hello']), (7, ['5', 'Hmm']), (8, ['5', 'Kevin'])]
+ 2018-05-26 05:06:05,034 -DEBUG- <map object at 0x7f9fe2e61160>
+ 2018-05-26 05:08:34,822 -DEBUG- ('Final Check', '123', 'final@gmail.com', '9663015381')
+ 2018-05-26 05:09:00,871 -DEBUG- ['', '1\n0\n30\nMohammed Numan\n', '2\n0 1 2\n10\nMohammed Furqan\n', '3\n0\n5\nMukesh\n', '4\n0\n5\nKevin Raymond\n', '5\n0 1 2\n15\nPiyush\n', '6\n0\n5\nHello\n', '7\n0\n5\nHmm\n', '8\n0\n5\nKevin\n', '9\n-1 0 1 2 4\n10\nBrother\n', '10\n-1\n0\nFinal Check\n']
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 1
+0
+30
+Mohammed Numan
+
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 2
+0 1 2
+10
+Mohammed Furqan
+
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 3
+0
+5
+Mukesh
+
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 4
+0
+5
+Kevin Raymond
+
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 5
+0 1 2
+15
+Piyush
+
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 6
+0
+5
+Hello
+
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 7
+0
+5
+Hmm
+
+ 2018-05-26 05:09:00,871 -DEBUG- The user is 8
+0
+5
+Kevin
+
+ 2018-05-26 05:09:00,872 -DEBUG- The user is 9
+-1 0 1 2 4
+10
+Brother
+
+ 2018-05-26 05:09:00,872 -DEBUG- The user is 10
+-1
+0
+Final Check
+
+ 2018-05-26 05:09:00,872 -DEBUG- [['30', 'Mohammed Numan'], ['10', 'Mohammed Furqan'], ['5', 'Mukesh'], ['5', 'Kevin Raymond'], ['15', 'Piyush'], ['5', 'Hello'], ['5', 'Hmm'], ['5', 'Kevin'], ['10', 'Brother'], ['0', 'Final Check']]
+ 2018-05-26 05:09:00,872 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['5', 'Mukesh']), (5, ['5', 'Kevin Raymond']), (6, ['5', 'Hello']), (7, ['5', 'Hmm']), (8, ['5', 'Kevin']), (9, ['0', 'Final Check'])]
+ 2018-05-26 05:09:00,872 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['5', 'Mukesh']), (5, ['5', 'Kevin Raymond']), (6, ['5', 'Hello']), (7, ['5', 'Hmm']), (8, ['5', 'Kevin']), (9, ['0', 'Final Check'])]
+ 2018-05-26 05:09:10,046 -DEBUG- <map object at 0x7f9fe2627208>
+ 2018-05-26 05:09:12,047 -DEBUG- $$0
+To complete this challenge, you must save a line of input from stdin to a variable, print Hello, World. on a single line, and finally print the value of your variable on a second line.<br/>
+You've got this!#
+A single line of text denoting inputString(the variable whose contents must be printed).#
+Print Hello, World. on the first line, and the contents of input string on the second line.#
+Welcome to 30 Days of Code!.#
+Hello, World.<br/>
+Welcome to 30 Days of Code.#
+#####
+ 2018-05-26 05:09:22,802 -DEBUG- Question Number is 0The test case is 
+ 2018-05-26 05:09:50,842 -DEBUG- Question Number is 0The test case is 
+ 2018-05-26 05:10:07,267 -DEBUG- Question Number is 0The test case is 
+ 2018-05-26 05:10:07,317 -DEBUG- The Excepted output is Hello World
+ Actual output is Hello World
+
+ 2018-05-26 05:10:11,784 -DEBUG- <map object at 0x7f9fe1dcdc88>
+ 2018-05-26 05:10:13,419 -DEBUG- ['', '1\n0\n30\nMohammed Numan\n', '2\n0 1 2\n10\nMohammed Furqan\n', '3\n0\n5\nMukesh\n', '4\n0\n5\nKevin Raymond\n', '5\n0 1 2\n15\nPiyush\n', '6\n0\n5\nHello\n', '7\n0\n5\nHmm\n', '8\n0\n5\nKevin\n', '9\n-1 0 1 2 4\n10\nBrother\n', '10\n-1 0\n5\nFinal Check\n']
+ 2018-05-26 05:10:13,419 -DEBUG- The user is 1
+0
+30
+Mohammed Numan
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 2
+0 1 2
+10
+Mohammed Furqan
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 3
+0
+5
+Mukesh
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 4
+0
+5
+Kevin Raymond
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 5
+0 1 2
+15
+Piyush
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 6
+0
+5
+Hello
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 7
+0
+5
+Hmm
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 8
+0
+5
+Kevin
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 9
+-1 0 1 2 4
+10
+Brother
+
+ 2018-05-26 05:10:13,420 -DEBUG- The user is 10
+-1 0
+5
+Final Check
+
+ 2018-05-26 05:10:13,420 -DEBUG- [['30', 'Mohammed Numan'], ['10', 'Mohammed Furqan'], ['5', 'Mukesh'], ['5', 'Kevin Raymond'], ['15', 'Piyush'], ['5', 'Hello'], ['5', 'Hmm'], ['5', 'Kevin'], ['10', 'Brother'], ['5', 'Final Check']]
+ 2018-05-26 05:10:13,420 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['5', 'Mukesh']), (5, ['5', 'Kevin Raymond']), (6, ['5', 'Hello']), (7, ['5', 'Hmm']), (8, ['5', 'Kevin']), (9, ['5', 'Final Check'])]
+ 2018-05-26 05:10:13,420 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['5', 'Mukesh']), (5, ['5', 'Kevin Raymond']), (6, ['5', 'Hello']), (7, ['5', 'Hmm']), (8, ['5', 'Kevin']), (9, ['5', 'Final Check'])]
+ 2018-05-26 05:10:20,453 -DEBUG- <map object at 0x7f9fe1db0080>
+ 2018-05-26 05:10:23,791 -DEBUG- $$1
+Given an array of integers, find the sum of its elements. #
+The first line contains an integer,n, denoting the size of the array.
+The second line contains space-separated integers representing the array's elements.#
+Print the sum of the array.#
+6
+1 2 3 4 10 11#
+31#
+#####
+ 2018-05-26 05:10:37,300 -DEBUG- Question Number is 1The test case is 5
+8 4 3 6 2
+
+ 2018-05-26 05:10:37,347 -DEBUG- The Excepted output is 23
+ Actual output is Hello
+
+ 2018-05-26 05:11:58,889 -DEBUG- Question Number is 1The test case is 5
+8 4 3 6 2
+
+ 2018-05-26 05:11:58,920 -DEBUG- The Excepted output is 23
+ Actual output is 23
+
+ 2018-05-26 05:12:03,985 -DEBUG- <map object at 0x7f9fe1daca20>
+ 2018-05-26 05:12:06,350 -DEBUG- ['', '1\n0\n30\nMohammed Numan\n', '2\n0 1 2\n10\nMohammed Furqan\n', '3\n0\n5\nMukesh\n', '4\n0\n5\nKevin Raymond\n', '5\n0 1 2\n15\nPiyush\n', '6\n0\n5\nHello\n', '7\n0\n5\nHmm\n', '8\n0\n5\nKevin\n', '9\n-1 0 1 2 4\n10\nBrother\n', '10\n-1 0 1\n10\nFinal Check\n']
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 1
+0
+30
+Mohammed Numan
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 2
+0 1 2
+10
+Mohammed Furqan
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 3
+0
+5
+Mukesh
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 4
+0
+5
+Kevin Raymond
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 5
+0 1 2
+15
+Piyush
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 6
+0
+5
+Hello
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 7
+0
+5
+Hmm
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 8
+0
+5
+Kevin
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 9
+-1 0 1 2 4
+10
+Brother
+
+ 2018-05-26 05:12:06,351 -DEBUG- The user is 10
+-1 0 1
+10
+Final Check
+
+ 2018-05-26 05:12:06,351 -DEBUG- [['30', 'Mohammed Numan'], ['10', 'Mohammed Furqan'], ['5', 'Mukesh'], ['5', 'Kevin Raymond'], ['15', 'Piyush'], ['5', 'Hello'], ['5', 'Hmm'], ['5', 'Kevin'], ['10', 'Brother'], ['10', 'Final Check']]
+ 2018-05-26 05:12:06,351 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['10', 'Final Check']), (5, ['5', 'Mukesh']), (6, ['5', 'Kevin Raymond']), (7, ['5', 'Hello']), (8, ['5', 'Hmm']), (9, ['5', 'Kevin'])]
+ 2018-05-26 05:12:06,352 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['10', 'Final Check']), (5, ['5', 'Mukesh']), (6, ['5', 'Kevin Raymond']), (7, ['5', 'Hello']), (8, ['5', 'Hmm']), (9, ['5', 'Kevin'])]
+ 2018-05-26 05:12:14,329 -DEBUG- <map object at 0x7f9fe1dd3710>
+ 2018-05-26 05:12:15,720 -DEBUG- $$2
+Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.<br/>
+We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
+Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
+
+    If a[i] > b[i], then Alice is awarded point.<br/>
+    If a[i] < b[i], then Bob is awarded point.<br/>
+    If a[i] = b[i], then neither person receives a point.<br/>
+<br/>
+Comparison points is the total points a person earned.<br/>
+
+Given and A,B can you compare the two challenges and print their respective comparison points?#
+The first line contains 3 space-separated integers describing the respective values in triplet A.<br/>
+The second line contains 3 space-separated integers describing the respective values in triplet B.#
+Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.#
+5 6 7
+3 6 10#
+1 1#
+#####
+ 2018-05-26 05:12:20,173 -DEBUG- ['a = list(map(int, input().strip().split()))', 'b = list(map(int, input().strip().split()))', 'score_alice = 0', 'score_bob = 0', 'if a[0] > b[0]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[1] > b[1]:', '    score_alice += 1', 'else:', '    score_bob += 1', 'if a[2] > b[2]:', '    score_alice += 1', 'else:', '    score_bob  += 1']
+ 2018-05-26 05:12:20,180 -DEBUG- ['1', '0', '30', 'Mohammed Numan', '']
+ 2018-05-26 05:12:20,181 -DEBUG- 1 Id is 10
+ 2018-05-26 05:12:20,181 -DEBUG- ['2', '0 1 2', '10', 'Mohammed Furqan', '']
+ 2018-05-26 05:12:20,181 -DEBUG- 2 Id is 10
+ 2018-05-26 05:12:20,181 -DEBUG- ['3', '0', '5', 'Mukesh', '']
+ 2018-05-26 05:12:20,181 -DEBUG- 3 Id is 10
+ 2018-05-26 05:12:20,182 -DEBUG- ['4', '0', '5', 'Kevin Raymond', '']
+ 2018-05-26 05:12:20,182 -DEBUG- 4 Id is 10
+ 2018-05-26 05:12:20,182 -DEBUG- ['5', '0 1 2', '15', 'Piyush', '']
+ 2018-05-26 05:12:20,182 -DEBUG- 5 Id is 10
+ 2018-05-26 05:12:20,182 -DEBUG- ['6', '0', '5', 'Hello', '']
+ 2018-05-26 05:12:20,182 -DEBUG- 6 Id is 10
+ 2018-05-26 05:12:20,182 -DEBUG- ['7', '0', '5', 'Hmm', '']
+ 2018-05-26 05:12:20,182 -DEBUG- 7 Id is 10
+ 2018-05-26 05:12:20,183 -DEBUG- ['8', '0', '5', 'Kevin', '']
+ 2018-05-26 05:12:20,183 -DEBUG- 8 Id is 10
+ 2018-05-26 05:12:20,183 -DEBUG- ['9', '-1 0 1 2 4', '10', 'Brother', '']
+ 2018-05-26 05:12:20,183 -DEBUG- 9 Id is 10
+ 2018-05-26 05:12:20,183 -DEBUG- ['10', '-1 0 1', '10', 'Final Check', '']
+ 2018-05-26 05:12:20,183 -DEBUG- 10 Id is 10
+ 2018-05-26 05:12:20,183 -DEBUG- Into The iff....
+ 2018-05-26 05:12:20,183 -DEBUG- -1 0 1
+ 2018-05-26 05:12:27,576 -DEBUG- $$2
+Alice and Bob each created one problem for HackerRank. A reviewer rates the two challenges, awarding points on a scale from 1 to 100 for three categories: problem clarity, originality, and difficulty.<br/>
+We define the rating for Alice's challenge to be the triplet A = (a[0],a[1],a[2]), and the rating for Bob's challenge to be the triplet B = (b[0],b[1],b[2]).<br/><br/>
+Your task is to find their comparison points by comparing a[0] with b[0], b[1] with a[1], and a[2] with b[2].<br /><br/>
+
+    If a[i] > b[i], then Alice is awarded point.<br/>
+    If a[i] < b[i], then Bob is awarded point.<br/>
+    If a[i] = b[i], then neither person receives a point.<br/>
+<br/>
+Comparison points is the total points a person earned.<br/>
+
+Given and A,B can you compare the two challenges and print their respective comparison points?#
+The first line contains 3 space-separated integers describing the respective values in triplet A.<br/>
+The second line contains 3 space-separated integers describing the respective values in triplet B.#
+Print two space-separated integers denoting the respective comparison points earned by Alice and Bob.#
+5 6 7
+3 6 10#
+1 1#
+#####
+ 2018-05-26 05:13:05,223 -DEBUG- Question Number is 2The test case is 6 9 2
 3 7 2
 
- 2018-05-24 14:38:48,988 -DEBUG- The Excepted output is 2 0
+ 2018-05-26 05:13:05,255 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 1
+
+ 2018-05-26 05:13:37,947 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
+
+ 2018-05-26 05:13:38,003 -DEBUG- The Excepted output is 2 0
+ Actual output is 2 1
+
+ 2018-05-26 05:14:00,034 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
+
+ 2018-05-26 05:14:13,176 -DEBUG- Question Number is 2The test case is 6 9 2
+3 7 2
+
+ 2018-05-26 05:14:13,208 -DEBUG- The Excepted output is 2 0
  Actual output is 2 0
- 2018-05-24 14:39:31,103 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
 
- 2018-05-24 14:39:42,848 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
+ 2018-05-26 05:14:18,921 -DEBUG- <map object at 0x7f9fe1db4908>
+ 2018-05-26 05:14:20,738 -DEBUG- ['', '1\n0\n30\nMohammed Numan\n', '2\n0 1 2\n10\nMohammed Furqan\n', '3\n0\n5\nMukesh\n', '4\n0\n5\nKevin Raymond\n', '5\n0 1 2\n15\nPiyush\n', '6\n0\n5\nHello\n', '7\n0\n5\nHmm\n', '8\n0\n5\nKevin\n', '9\n-1 0 1 2 4\n10\nBrother\n', '10\n-1 0 1 2\n10\nFinal Check\n']
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 1
+0
+30
+Mohammed Numan
 
- 2018-05-24 14:39:42,888 -DEBUG- The Excepted output is 2 0
- Actual output is 2 
- 2018-05-24 14:40:10,072 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 2
+0 1 2
+10
+Mohammed Furqan
 
- 2018-05-24 14:40:10,113 -DEBUG- The Excepted output is 2 0
- Actual output is 2 
- 2018-05-24 14:40:21,005 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 3
+0
+5
+Mukesh
 
- 2018-05-24 14:40:21,047 -DEBUG- The Excepted output is 2 0
- Actual output is 2 0
- 2018-05-24 14:41:35,878 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 4
+0
+5
+Kevin Raymond
 
- 2018-05-24 14:41:38,500 -DEBUG- The Excepted output is 2 0
- Actual output is 2 0
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 5
+0 1 2
+15
+Piyush
 
- 2018-05-24 14:41:41,420 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 6
+0
+5
+Hello
 
- 2018-05-24 14:41:49,048 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 7
+0
+5
+Hmm
 
- 2018-05-24 14:41:49,804 -DEBUG- The Excepted output is 2 0
- Actual output is 2
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 8
+0
+5
+Kevin
 
- 2018-05-24 14:41:55,232 -DEBUG- Question Number is 2The test case is 6 9 2
-3 7 2
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 9
+-1 0 1 2 4
+10
+Brother
 
- 2018-05-24 14:41:56,018 -DEBUG- The Excepted output is 2 0
- Actual output is 2 0
+ 2018-05-26 05:14:20,739 -DEBUG- The user is 10
+-1 0 1 2
+10
+Final Check
 
+ 2018-05-26 05:14:20,739 -DEBUG- [['30', 'Mohammed Numan'], ['10', 'Mohammed Furqan'], ['5', 'Mukesh'], ['5', 'Kevin Raymond'], ['15', 'Piyush'], ['5', 'Hello'], ['5', 'Hmm'], ['5', 'Kevin'], ['10', 'Brother'], ['10', 'Final Check']]
+ 2018-05-26 05:14:20,739 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['10', 'Final Check']), (5, ['5', 'Mukesh']), (6, ['5', 'Kevin Raymond']), (7, ['5', 'Hello']), (8, ['5', 'Hmm']), (9, ['5', 'Kevin'])]
+ 2018-05-26 05:14:20,739 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['10', 'Final Check']), (5, ['5', 'Mukesh']), (6, ['5', 'Kevin Raymond']), (7, ['5', 'Hello']), (8, ['5', 'Hmm']), (9, ['5', 'Kevin'])]
+ 2018-05-26 05:14:26,722 -DEBUG- <map object at 0x7f9fe1ddfa90>
+ 2018-05-26 05:14:30,379 -DEBUG- $$3
+Calculate and print the sum of the elements in an array, keeping in mind that some of those integers may be quite large.#
+The first line of the input consists of an integer n.<br/>
+The next line contains n space-separated integers contained in the array.#
+Print the sum of the array elements.#
+5<br />
+1000000001 1000000002 1000000003 1000000004 1000000005#
+5000000015#
+#####
+ 2018-05-26 05:14:32,550 -DEBUG- [('No comments here\n', '\nMohammed Numan\n'), ('',)]
+ 2018-05-26 05:15:01,025 -DEBUG- The details are <p>Can anyone explain me the Problem....</p>
+ Final Check
+ 2018-05-26 05:15:01,025 -DEBUG- [['No comments here\n', '\nMohammed Numan\n'], ['<p>Can anyone explain me the Problem....</p>\n', 'Final Check\n'], ['\n']]
+ 2018-05-26 05:15:09,613 -DEBUG- <map object at 0x7f9fe1ddfd68>
+ 2018-05-26 05:15:23,037 -DEBUG- Inside if......!
+ 2018-05-26 05:15:23,037 -DEBUG- ['Final Check Done', '123', 'final@gmail.com', '9663015381', '10\n']
+ 2018-05-26 05:16:19,541 -DEBUG- Inside if......!
+ 2018-05-26 05:16:19,541 -DEBUG- ['Final Check Done', '12345', 'final@gmail.com', '9663015381', '10\n']
+ 2018-05-26 05:16:31,323 -DEBUG- ['', '1\n0\n30\nMohammed Numan\n', '2\n0 1 2\n10\nMohammed Furqan\n', '3\n0\n5\nMukesh\n', '4\n0\n5\nKevin Raymond\n', '5\n0 1 2\n15\nPiyush\n', '6\n0\n5\nHello\n', '7\n0\n5\nHmm\n', '8\n0\n5\nKevin\n', '9\n-1 0 1 2 4\n10\nBrother\n', '10\n-1 0 1 2\n10\nFinal Check\n']
+ 2018-05-26 05:16:31,323 -DEBUG- The user is 1
+0
+30
+Mohammed Numan
+
+ 2018-05-26 05:16:31,323 -DEBUG- The user is 2
+0 1 2
+10
+Mohammed Furqan
+
+ 2018-05-26 05:16:31,323 -DEBUG- The user is 3
+0
+5
+Mukesh
+
+ 2018-05-26 05:16:31,324 -DEBUG- The user is 4
+0
+5
+Kevin Raymond
+
+ 2018-05-26 05:16:31,324 -DEBUG- The user is 5
+0 1 2
+15
+Piyush
+
+ 2018-05-26 05:16:31,324 -DEBUG- The user is 6
+0
+5
+Hello
+
+ 2018-05-26 05:16:31,324 -DEBUG- The user is 7
+0
+5
+Hmm
+
+ 2018-05-26 05:16:31,324 -DEBUG- The user is 8
+0
+5
+Kevin
+
+ 2018-05-26 05:16:31,324 -DEBUG- The user is 9
+-1 0 1 2 4
+10
+Brother
+
+ 2018-05-26 05:16:31,324 -DEBUG- The user is 10
+-1 0 1 2
+10
+Final Check
+
+ 2018-05-26 05:16:31,324 -DEBUG- [['30', 'Mohammed Numan'], ['10', 'Mohammed Furqan'], ['5', 'Mukesh'], ['5', 'Kevin Raymond'], ['15', 'Piyush'], ['5', 'Hello'], ['5', 'Hmm'], ['5', 'Kevin'], ['10', 'Brother'], ['10', 'Final Check']]
+ 2018-05-26 05:16:31,324 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['10', 'Final Check']), (5, ['5', 'Mukesh']), (6, ['5', 'Kevin Raymond']), (7, ['5', 'Hello']), (8, ['5', 'Hmm']), (9, ['5', 'Kevin'])]
+ 2018-05-26 05:16:31,324 -DEBUG- [(0, ['30', 'Mohammed Numan']), (1, ['15', 'Piyush']), (2, ['10', 'Mohammed Furqan']), (3, ['10', 'Brother']), (4, ['10', 'Final Check']), (5, ['5', 'Mukesh']), (6, ['5', 'Kevin Raymond']), (7, ['5', 'Hello']), (8, ['5', 'Hmm']), (9, ['5', 'Kevin'])]
